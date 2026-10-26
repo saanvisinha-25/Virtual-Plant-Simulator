@@ -1,0 +1,224 @@
+/* MEMBER 1: GENERAL PAGE DESIGN */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f7ee;
+    color: #25452d;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+    background: linear-gradient(135deg, #174f35, #378653);
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.25;
+    margin: 15px 0;
+}
+
+.subtitle {
+    font-size: 17px;
+    color: #e2f2e5;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.intro h2,
+.biology-info h2 {
+    color: #246b45;
+}
+
+/* MAIN CONTENT CARDS */
+
+.main-container {
+    width: min(1000px, 100%);
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border: 1px solid #e2eadf;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(35, 75, 45, 0.07);
+    text-align: center;
+    min-width: 0;
+}
+
+.card h2 {
+    color: #286943;
+    margin-top: 0;
+}
+
+#plant {
+    font-size: 90px;
+    margin: 20px 0;
+}
+
+.placeholder {
+    color: #718274;
+    padding: 15px 0;
+}
+
+/* BIOLOGY INFORMATION */
+
+.biology-info {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.info-grid article {
+    background: #e3efdf;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.info-grid h3 {
+    color: #286943;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 22px 15px;
+    background: #174f35;
+    color: white;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 650px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 35px 16px;
+    }
+}
+/* MEMBER 2: ENVIRONMENT CONTROL DESIGN */
+
+.control-item {
+    margin: 22px 0;
+    text-align: left;
+}
+
+.control-item label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.control-item input[type="range"] {
+    width: 100%;
+    accent-color: #2e8540;
+    cursor: pointer;
+}
+
+#simulate-button {
+    background: #247443;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#simulate-button:hover {
+    background: #185a32;
+}
+/* MEMBER 4: GROWTH RESULTS DESIGN */
+
+#growth-progress {
+    width: 100%;
+    height: 22px;
+    accent-color: #2e8540;
+    margin: 10px 0;
+}
+
+#health-status {
+    font-weight: bold;
+    color: #247443;
+}
+
+#growth-explanation {
+    color: #607565;
+}
+/* MEMBER 5: EXPERIMENT DESIGN */
+
+#experiment {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #cbdcc9;
+    border-radius: 8px;
+    background: white;
+    color: #25452d;
+}
+
+#experiment-button {
+    background: #467b55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+#experiment-result {
+    margin-top: 15px;
+    padding: 12px;
+    background: #edf5e9;
+    border-radius: 8px;
+}

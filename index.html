@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Plant Growth Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MEMBER 1: MAIN HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <p class="eyebrow">BIOLOGY PROJECT</p>
+            <h1>🌱 Virtual Plant Growth Simulator</h1>
+            <p class="subtitle">
+                Discover how water, sunlight and temperature
+                influence plant growth.
+            </p>
+        </div>
+    </header>
+
+    <!-- MEMBER 1: INTRODUCTION -->
+    <section class="intro">
+        <h2>Welcome to the Virtual Plant Lab</h2>
+        <p>
+            Explore the relationship between environmental
+            conditions and plant growth through an interactive
+            educational simulation.
+        </p>
+    </section>
+
+    <!-- MAIN PROJECT SECTIONS -->
+    <main class="main-container">
+
+        <!-- MEMBER 3: PLANT DISPLAY -->
+        <section class="card" id="plant-section">
+            <h2>🌿 Plant Growth</h2>
+
+            <div id="plant">🌱</div>
+
+            <h3 id="stage">Seedling Stage</h3>
+
+            <p id="status">
+                Your virtual plant is ready for the experiment.
+            </p>
+        </section>
+
+        <!-- MEMBER 2: ENVIRONMENT CONTROLS -->
+<section class="card" id="controls-section">
+    <h2>🌤️ Environment Controls</h2>
+
+    <div class="control-item">
+        <label for="water">
+            💧 Water: <span id="water-value">50</span>%
+        </label>
+        <input type="range" id="water"
+               min="0" max="100" value="50">
+    </div>
+
+    <div class="control-item">
+        <label for="sunlight">
+            ☀️ Sunlight: <span id="sunlight-value">50</span>%
+        </label>
+        <input type="range" id="sunlight"
+               min="0" max="100" value="50">
+    </div>
+
+    <div class="control-item">
+        <label for="temperature">
+            🌡️ Temperature:
+            <span id="temperature-value">25</span>°C
+        </label>
+        <input type="range" id="temperature"
+               min="0" max="45" value="25">
+    </div>
+
+    <button id="simulate-button">Simulate Growth 🌱</button>
+</section>
+        <<!-- MEMBER 4: GROWTH RESULTS -->
+<section class="card" id="results-section">
+    <h2>📊 Growth Results</h2>
+
+    <h3>Growth Score: <span id="score">50</span>/100</h3>
+
+    <progress id="growth-progress"
+              value="50" max="100"></progress>
+
+    <p id="health-status">Plant condition: Fair</p>
+
+    <p id="growth-explanation">
+        Adjust the environment and simulate growth.
+    </p>
+</section>
+
+        <!-- MEMBER 5: EXPERIMENTS -->
+<section class="card" id="experiment-section">
+    <h2>🔬 Biology Experiments</h2>
+
+    <label for="experiment">
+        Choose an experiment:
+    </label>
+
+    <select id="experiment">
+        <option value="balanced">Balanced Conditions</option>
+        <option value="low-water">Low Water</option>
+        <option value="low-light">Low Sunlight</option>
+        <option value="high-temperature">High Temperature</option>
+    </select>
+
+    <button id="experiment-button">
+        Run Experiment
+    </button>
+
+    <p id="experiment-result">
+        Select an experiment to begin.
+    </p>
+
+    <h3>What can we learn?</h3>
+
+    <p>
+        Plants require suitable water, light and temperature
+        for healthy growth. Water supports essential plant
+        processes, light provides energy for photosynthesis,
+        and temperature affects enzyme activity.
+    </p>
+</section>
+    <!-- MEMBER 1: BIOLOGY INFORMATION -->
+    <section class="biology-info">
+        <h2>The Science Behind Plant Growth</h2>
+
+        <div class="info-grid">
+            <article>
+                <h3>☀️ Sunlight</h3>
+                <p>
+                    Light provides the energy plants use
+                    for photosynthesis.
+                </p>
+            </article>
+
+            <article>
+                <h3>💧 Water</h3>
+                <p>
+                    Water supports essential plant processes
+                    and helps transport substances.
+                </p>
+            </article>
+
+            <article>
+                <h3>🌡️ Temperature</h3>
+                <p>
+                    Temperature influences enzyme activity
+                    and many plant growth processes.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- MEMBER 1: FOOTER -->
+    <footer class="footer">
+        <p>Virtual Plant Growth Simulator</p>
+        <p>Biology Project | Five-Member Team</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
